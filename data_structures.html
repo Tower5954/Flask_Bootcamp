@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Structures</title>
+</head>
+<body>
+  <h2> Data Structures in Jinja2</h2>
+
+  <h3>List Operations</h3>
+
+  <p>
+    Jinja said her top three favourite movies were {{ movies[0] }},
+    {{ movies[1] }} and {{ movies[2] }}.
+  </p>
+  <p>
+      Jinja is an idiot!
+  </p>
+
+  <h3>Dictionary Operations</h3>
+
+    <p>
+        This is a {{ car["brand"] }} {{ car["model"] }}, built
+        in {{ car["year"] }}.
+
+        It sucks!
+    </p>
+
+   <h3>Custom Data Structure Operations</h3>
+    <p>
+        The four Galilean moons of Jupiter are {{ moons.first, moons.second,
+        moons.third, moons.fourth }}
+    </p>
+
+
+</body>
+</html>
