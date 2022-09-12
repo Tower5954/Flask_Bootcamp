@@ -66,3 +66,9 @@ def render_data_structures():
     moons = GalileanMoons("Io", "Europa", "Ganymede", "Callisto")
 
     return render_template("data_structures.html", movies=movies, car=car, moons=moons)
+
+
+@app.route("/conditional-basics/")
+def render_conditionals():
+    company = "Microsoft"
+    return render_template("conditional_basics.html", company=company)
