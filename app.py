@@ -72,3 +72,18 @@ def render_data_structures():
 def render_conditionals():
     company = "Microsoft"
     return render_template("conditional_basics.html", company=company)
+
+
+@app.route("/for-loop/")
+def render_loops_for():
+    planets = [
+        "Mercury",
+        "Venus",
+        "Earth",
+        "Mars",
+        "Jupiter",
+        "Saturn",
+        "Uranus",
+        "Neptune",
+    ]
+    return render_template("for_loop.html", planets=planets)
